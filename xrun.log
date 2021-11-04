@@ -1,0 +1,480 @@
+xrun(64): 18.09-s011: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	18.09-s011: Started on Nov 03, 2021 at 23:13:28 CDT
+xrun
+	-64bit
+	-gui
+	-access r
+	./lib/and_gate.v
+	./lib/and_gate_32.v
+	./lib/and_gate_n.v
+	./lib/dec_n.v
+	./lib/mux.v
+	./lib/mux_32.v
+	./lib/mux_n.v
+	./lib/nand_gate.v
+	./lib/nand_gate_32.v
+	./lib/nand_gate_n.v
+	./lib/nor_gate.v
+	./lib/nor_gate_32.v
+	./lib/nor_gate_n.v
+	./lib/not_gate.v
+	./lib/not_gate_32.v
+	./lib/not_gate_n.v
+	./lib/or_gate.v
+	./lib/or_gate_32.v
+	./lib/or_gate_n.v
+	./lib/xnor_gate.v
+	./lib/xnor_gate_32.v
+	./lib/xnor_gate_n.v
+	./lib/xor_gate.v
+	./lib/xor_gate_32.v
+	./lib/xor_gate_n.v
+	./add_32.v
+	./alu.v
+	./alu_tb.v
+	./carry_sel.v
+	./check_zero.v
+	./comparator.v
+	./fulladder.v
+	./fulladder_4.v
+	./mux16_to_1.v
+	./mux_32_wrapper.v
+	./mux_n_wrapper.v
+	./sll.v
+	./slr.v
+	./slt.v
+	./sltu.v
+file: ./lib/dec_n.v
+	module worklib.dec_n:v
+		errors: 0, warnings: 0
+file: ./lib/mux_n.v
+	module worklib.mux_n:v
+		errors: 0, warnings: 0
+file: ./lib/nand_gate_n.v
+	module worklib.nand_gate_n:v
+		errors: 0, warnings: 0
+file: ./lib/nor_gate_n.v
+	module worklib.nor_gate_n:v
+		errors: 0, warnings: 0
+file: ./lib/not_gate_n.v
+	module worklib.not_gate_n:v
+		errors: 0, warnings: 0
+file: ./lib/or_gate_n.v
+	module worklib.or_gate_n:v
+		errors: 0, warnings: 0
+file: ./lib/xnor_gate_n.v
+	module worklib.xnor_gate_n:v
+		errors: 0, warnings: 0
+file: ./lib/xor_gate_n.v
+	module worklib.xor_gate_n:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		and_gate_n
+		dec_n
+		nand_gate
+		nand_gate_32
+		nand_gate_n
+		nor_gate_32
+		nor_gate_n
+		not_gate
+		not_gate_32
+		not_gate_n
+		xnor_gate_32
+		xnor_gate_n
+		alu_tb
+           .src0(a),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,43|17): port sizes differ in port connection (1/32).
+           .src1(b),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,44|17): port sizes differ in port connection (1/32).
+           .z(mux_1_0_res)
+                        |
+xmelab: *W,CUVMPW (./mux16_to_1.v,45|24): port sizes differ in port connection (1/32).
+           .src0(c),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,49|17): port sizes differ in port connection (1/32).
+           .src1(d),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,50|17): port sizes differ in port connection (1/32).
+           .z(mux_1_1_res)
+                        |
+xmelab: *W,CUVMPW (./mux16_to_1.v,51|24): port sizes differ in port connection (1/32).
+           .src0(e),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,55|17): port sizes differ in port connection (1/32).
+           .src1(f),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,56|17): port sizes differ in port connection (1/32).
+           .z(mux_1_2_res)
+                        |
+xmelab: *W,CUVMPW (./mux16_to_1.v,57|24): port sizes differ in port connection (1/32).
+           .src0(g),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,61|17): port sizes differ in port connection (1/32).
+           .src1(h),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,62|17): port sizes differ in port connection (1/32).
+           .z(mux_1_3_res)
+                        |
+xmelab: *W,CUVMPW (./mux16_to_1.v,63|24): port sizes differ in port connection (1/32).
+           .src0(i),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,67|17): port sizes differ in port connection (1/32).
+           .src1(j),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,68|17): port sizes differ in port connection (1/32).
+           .z(mux_1_4_res)
+                        |
+xmelab: *W,CUVMPW (./mux16_to_1.v,69|24): port sizes differ in port connection (1/32).
+           .src0(k),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,73|17): port sizes differ in port connection (1/32).
+           .src1(l),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,74|17): port sizes differ in port connection (1/32).
+           .z(mux_1_5_res)
+                        |
+xmelab: *W,CUVMPW (./mux16_to_1.v,75|24): port sizes differ in port connection (1/32).
+           .src0(m),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,79|17): port sizes differ in port connection (1/32).
+           .src1(n),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,80|17): port sizes differ in port connection (1/32).
+           .z(mux_1_6_res)
+                        |
+xmelab: *W,CUVMPW (./mux16_to_1.v,81|24): port sizes differ in port connection (1/32).
+           .src0(o),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,85|17): port sizes differ in port connection (1/32).
+           .src1(p),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,86|17): port sizes differ in port connection (1/32).
+           .z(mux_1_7_res)
+                        |
+xmelab: *W,CUVMPW (./mux16_to_1.v,87|24): port sizes differ in port connection (1/32).
+           .src0(mux_1_0_res),
+                           |
+xmelab: *W,CUVMPW (./mux16_to_1.v,93|27): port sizes differ in port connection (1/32).
+           .src1(mux_1_1_res),
+                           |
+xmelab: *W,CUVMPW (./mux16_to_1.v,94|27): port sizes differ in port connection (1/32).
+           .z(mux_2_0_res)
+                        |
+xmelab: *W,CUVMPW (./mux16_to_1.v,95|24): port sizes differ in port connection (1/32).
+           .src0(mux_1_2_res),
+                           |
+xmelab: *W,CUVMPW (./mux16_to_1.v,99|27): port sizes differ in port connection (1/32).
+           .src1(mux_1_3_res),
+                           |
+xmelab: *W,CUVMPW (./mux16_to_1.v,100|27): port sizes differ in port connection (1/32).
+           .z(mux_2_1_res)
+                        |
+xmelab: *W,CUVMPW (./mux16_to_1.v,101|24): port sizes differ in port connection (1/32).
+           .src0(mux_1_4_res),
+                           |
+xmelab: *W,CUVMPW (./mux16_to_1.v,105|27): port sizes differ in port connection (1/32).
+           .src1(mux_1_5_res),
+                           |
+xmelab: *W,CUVMPW (./mux16_to_1.v,106|27): port sizes differ in port connection (1/32).
+           .z(mux_2_2_res)
+                        |
+xmelab: *W,CUVMPW (./mux16_to_1.v,107|24): port sizes differ in port connection (1/32).
+           .src0(mux_1_6_res),
+                           |
+xmelab: *W,CUVMPW (./mux16_to_1.v,111|27): port sizes differ in port connection (1/32).
+           .src1(mux_1_7_res),
+                           |
+xmelab: *W,CUVMPW (./mux16_to_1.v,112|27): port sizes differ in port connection (1/32).
+           .z(mux_2_3_res)
+                        |
+xmelab: *W,CUVMPW (./mux16_to_1.v,113|24): port sizes differ in port connection (1/32).
+           .src0(mux_2_0_res),
+                           |
+xmelab: *W,CUVMPW (./mux16_to_1.v,119|27): port sizes differ in port connection (1/32).
+           .src1(mux_2_1_res),
+                           |
+xmelab: *W,CUVMPW (./mux16_to_1.v,120|27): port sizes differ in port connection (1/32).
+           .z(mux_3_0_res)
+                        |
+xmelab: *W,CUVMPW (./mux16_to_1.v,121|24): port sizes differ in port connection (1/32).
+           .src0(mux_2_2_res),
+                           |
+xmelab: *W,CUVMPW (./mux16_to_1.v,125|27): port sizes differ in port connection (1/32).
+           .src1(mux_2_3_res),
+                           |
+xmelab: *W,CUVMPW (./mux16_to_1.v,126|27): port sizes differ in port connection (1/32).
+           .z(mux_3_1_res)
+                        |
+xmelab: *W,CUVMPW (./mux16_to_1.v,127|24): port sizes differ in port connection (1/32).
+           .src0(mux_3_0_res),
+                           |
+xmelab: *W,CUVMPW (./mux16_to_1.v,133|27): port sizes differ in port connection (1/32).
+           .src1(mux_3_1_res),
+                           |
+xmelab: *W,CUVMPW (./mux16_to_1.v,134|27): port sizes differ in port connection (1/32).
+           .z(z)
+              |
+xmelab: *W,CUVMPW (./mux16_to_1.v,135|14): port sizes differ in port connection (1/32).
+           .src0(a),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,43|17): port sizes differ in port connection (1/32).
+           .src1(b),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,44|17): port sizes differ in port connection (1/32).
+           .z(mux_1_0_res)
+                        |
+xmelab: *W,CUVMPW (./mux16_to_1.v,45|24): port sizes differ in port connection (1/32).
+           .src0(c),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,49|17): port sizes differ in port connection (1/32).
+           .src1(d),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,50|17): port sizes differ in port connection (1/32).
+           .z(mux_1_1_res)
+                        |
+xmelab: *W,CUVMPW (./mux16_to_1.v,51|24): port sizes differ in port connection (1/32).
+           .src0(e),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,55|17): port sizes differ in port connection (1/32).
+           .src1(f),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,56|17): port sizes differ in port connection (1/32).
+           .z(mux_1_2_res)
+                        |
+xmelab: *W,CUVMPW (./mux16_to_1.v,57|24): port sizes differ in port connection (1/32).
+           .src0(g),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,61|17): port sizes differ in port connection (1/32).
+           .src1(h),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,62|17): port sizes differ in port connection (1/32).
+           .z(mux_1_3_res)
+                        |
+xmelab: *W,CUVMPW (./mux16_to_1.v,63|24): port sizes differ in port connection (1/32).
+           .src0(i),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,67|17): port sizes differ in port connection (1/32).
+           .src1(j),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,68|17): port sizes differ in port connection (1/32).
+           .z(mux_1_4_res)
+                        |
+xmelab: *W,CUVMPW (./mux16_to_1.v,69|24): port sizes differ in port connection (1/32).
+           .src0(k),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,73|17): port sizes differ in port connection (1/32).
+           .src1(l),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,74|17): port sizes differ in port connection (1/32).
+           .z(mux_1_5_res)
+                        |
+xmelab: *W,CUVMPW (./mux16_to_1.v,75|24): port sizes differ in port connection (1/32).
+           .src0(m),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,79|17): port sizes differ in port connection (1/32).
+           .src1(n),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,80|17): port sizes differ in port connection (1/32).
+           .z(mux_1_6_res)
+                        |
+xmelab: *W,CUVMPW (./mux16_to_1.v,81|24): port sizes differ in port connection (1/32).
+           .src0(o),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,85|17): port sizes differ in port connection (1/32).
+           .src1(p),
+                 |
+xmelab: *W,CUVMPW (./mux16_to_1.v,86|17): port sizes differ in port connection (1/32).
+           .z(mux_1_7_res)
+                        |
+xmelab: *W,CUVMPW (./mux16_to_1.v,87|24): port sizes differ in port connection (1/32).
+           .src0(mux_1_0_res),
+                           |
+xmelab: *W,CUVMPW (./mux16_to_1.v,93|27): port sizes differ in port connection (1/32).
+           .src1(mux_1_1_res),
+                           |
+xmelab: *W,CUVMPW (./mux16_to_1.v,94|27): port sizes differ in port connection (1/32).
+           .z(mux_2_0_res)
+                        |
+xmelab: *W,CUVMPW (./mux16_to_1.v,95|24): port sizes differ in port connection (1/32).
+           .src0(mux_1_2_res),
+                           |
+xmelab: *W,CUVMPW (./mux16_to_1.v,99|27): port sizes differ in port connection (1/32).
+           .src1(mux_1_3_res),
+                           |
+xmelab: *W,CUVMPW (./mux16_to_1.v,100|27): port sizes differ in port connection (1/32).
+           .z(mux_2_1_res)
+                        |
+xmelab: *W,CUVMPW (./mux16_to_1.v,101|24): port sizes differ in port connection (1/32).
+           .src0(mux_1_4_res),
+                           |
+xmelab: *W,CUVMPW (./mux16_to_1.v,105|27): port sizes differ in port connection (1/32).
+           .src1(mux_1_5_res),
+                           |
+xmelab: *W,CUVMPW (./mux16_to_1.v,106|27): port sizes differ in port connection (1/32).
+           .z(mux_2_2_res)
+                        |
+xmelab: *W,CUVMPW (./mux16_to_1.v,107|24): port sizes differ in port connection (1/32).
+           .src0(mux_1_6_res),
+                           |
+xmelab: *W,CUVMPW (./mux16_to_1.v,111|27): port sizes differ in port connection (1/32).
+           .src1(mux_1_7_res),
+                           |
+xmelab: *W,CUVMPW (./mux16_to_1.v,112|27): port sizes differ in port connection (1/32).
+           .z(mux_2_3_res)
+                        |
+xmelab: *W,CUVMPW (./mux16_to_1.v,113|24): port sizes differ in port connection (1/32).
+           .src0(mux_2_0_res),
+                           |
+xmelab: *W,CUVMPW (./mux16_to_1.v,119|27): port sizes differ in port connection (1/32).
+           .src1(mux_2_1_res),
+                           |
+xmelab: *W,CUVMPW (./mux16_to_1.v,120|27): port sizes differ in port connection (1/32).
+           .z(mux_3_0_res)
+                        |
+xmelab: *W,CUVMPW (./mux16_to_1.v,121|24): port sizes differ in port connection (1/32).
+           .src0(mux_2_2_res),
+                           |
+xmelab: *W,CUVMPW (./mux16_to_1.v,125|27): port sizes differ in port connection (1/32).
+           .src1(mux_2_3_res),
+                           |
+xmelab: *W,CUVMPW (./mux16_to_1.v,126|27): port sizes differ in port connection (1/32).
+           .z(mux_3_1_res)
+                        |
+xmelab: *W,CUVMPW (./mux16_to_1.v,127|24): port sizes differ in port connection (1/32).
+           .src0(mux_3_0_res),
+                           |
+xmelab: *W,CUVMPW (./mux16_to_1.v,133|27): port sizes differ in port connection (1/32).
+           .src1(mux_3_1_res),
+                           |
+xmelab: *W,CUVMPW (./mux16_to_1.v,134|27): port sizes differ in port connection (1/32).
+           .z(z)
+              |
+xmelab: *W,CUVMPW (./mux16_to_1.v,135|14): port sizes differ in port connection (1/32).
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.mux_32:v <0x5758fe55>
+			streams:   2, words:   726
+		worklib.mux_32_wrapper:v <0x00f9aa97>
+			streams:   0, words:     0
+		worklib.mux_32:v <0x3bc9bad2>
+			streams:   2, words:   604
+		worklib.mux_32_wrapper:v <0x113be50e>
+			streams:   0, words:     0
+		worklib.mux_32:v <0x7db09662>
+			streams:   2, words:   566
+		worklib.mux_32_wrapper:v <0x120cd40c>
+			streams:   0, words:     0
+		worklib.mux_32:v <0x1121d2e5>
+			streams:   2, words:   566
+		worklib.mux_32_wrapper:v <0x03ce9b95>
+			streams:   0, words:     0
+		worklib.mux_32:v <0x379ee69c>
+			streams:   2, words:   511
+		worklib.mux_32_wrapper:v <0x0f99c7db>
+			streams:   0, words:     0
+		worklib.mux_32:v <0x5b0fa21b>
+			streams:   2, words:   633
+		worklib.mux_32_wrapper:v <0x1e5b8842>
+			streams:   0, words:     0
+		worklib.xor_gate_n:v <0x5e8e6c75>
+			streams:   1, words:   230
+		worklib.nor_gate:v <0x48c2fbd1>
+			streams:   0, words:     0
+		worklib.comparator:v <0x73883987>
+			streams:   0, words:     0
+		worklib.slt:v <0x6661bc4a>
+			streams:   3, words:   615
+		worklib.or_gate_32:v <0x326e3afb>
+			streams:   2, words:   560
+		worklib.xor_gate_32:v <0x5c5299ef>
+			streams:   1, words:   249
+		worklib.and_gate_32:v <0x73a67e3a>
+			streams:   2, words:   539
+		worklib.xor_gate_32:v <0x455016cc>
+			streams:   1, words:   274
+		worklib.xnor_gate:v <0x52ca80f3>
+			streams:   0, words:     0
+		worklib.mux:v <0x4e90b5bc>
+			streams:   2, words:   440
+		worklib.mux_n:v <0x1603f007>
+			streams:   2, words:   727
+		worklib.mux_n_wrapper:v <0x449ed793>
+			streams:   0, words:     0
+		worklib.or_gate_n:v <0x3673d357>
+			streams:   2, words:   637
+		worklib.or_gate:v <0x31f080fc>
+			streams:   0, words:     0
+		worklib.and_gate:v <0x20236131>
+			streams:   0, words:     0
+		worklib.xor_gate:v <0x52b96f7a>
+			streams:   0, words:     0
+		worklib.add_32:v <0x3db1f66d>
+			streams:   0, words:     0
+		worklib.alu:v <0x1db8bcbd>
+			streams:   3, words:   556
+		worklib.alu_tb:v <0x0cc425cd>
+			streams:   4, words: 27258
+		worklib.xnor_gate_n:v <0x5be3bacc>
+			streams:   1, words:   146
+		worklib.xnor_gate_32:v <0x7d416251>
+			streams:   1, words:   138
+		worklib.not_gate_n:v <0x5ed35d23>
+			streams:   1, words:   124
+		worklib.not_gate_32:v <0x7391cda6>
+			streams:   1, words:   116
+		worklib.not_gate:v <0x065d46f0>
+			streams:   0, words:     0
+		worklib.nor_gate_n:v <0x39979e99>
+			streams:   2, words:   357
+		worklib.nor_gate_32:v <0x33e2e78f>
+			streams:   2, words:   334
+		worklib.nand_gate_n:v <0x2ca36f26>
+			streams:   2, words:   339
+		worklib.nand_gate_32:v <0x0c7edf85>
+			streams:   2, words:   316
+		worklib.nand_gate:v <0x73f0c3b8>
+			streams:   0, words:     0
+		worklib.dec_n:v <0x7338294a>
+			streams:   3, words:  2414
+		worklib.and_gate_n:v <0x30ad3b01>
+			streams:   2, words:   331
+		worklib.sll:v <0x2b05c40d>
+			streams:   0, words:     0
+		worklib.slr:v <0x34b9d903>
+			streams:   0, words:     0
+		worklib.carry_sel_32:v <0x780c1587>
+			streams:   1, words:   170
+		worklib.sltu:v <0x1de3e915>
+			streams:   1, words:   174
+		worklib.fulladder_4:v <0x1f7a3906>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                Instances  Unique
+		Modules:             3357      40
+		Registers:            505       9
+		Scalar wires:        3236       -
+		Expanded wires:      1431      85
+		Vectored wires:        76       -
+		Always blocks:        500       4
+		Initial blocks:         1       1
+		Cont. assignments:     27      33
+		Pseudo assignments:    13       9
+	Writing initial simulation snapshot: worklib.and_gate_n:v
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /vol/cadence2018/XCELIUM1809/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm alu_tb.carry_out alu_tb.control alu_tb.curr_opcode alu_tb.operand_a alu_tb.operand_b alu_tb.overflow alu_tb.result alu_tb.zero
+Created probe 1
+xcelium> run
+xmsim: *W,RNQUIE: Simulation is complete.
+xcelium> 
