@@ -1,5 +1,19 @@
 module alu_tb;
 
+// unit test variables
+reg adder_operand_a, adder_operand_b, adder_carry_in;
+wire adder_sum;
+wire adder_carry_out;
+reg subtractor_operand_a, subtractor_operand_b;
+wire subtractor_not_operand_b;
+wire subtractor_sum, subtractor_carry_out;
+reg xor_operand_a, xor_operand_b;
+wire xor_res;
+reg or_operand_a, or_operand_b;
+wire or_res;
+reg and_operand_a, and_operand_b;
+wire and_res;
+
 reg [31:0] operand_a;
 reg [31:0] operand_b;
 reg [3:0] control;
@@ -18,6 +32,51 @@ assign opcode_ascii[6] = " srl";
 assign opcode_ascii[7] = " slt";
 assign opcode_ascii[8] = "sltu";
 
+// one-bit adder
+fulladder adder_unit (
+         .a(adder_operand_a),
+         .b(adder_operand_b),
+         .carry_in(adder_carry_in),
+         .sum(adder_sum),
+         .carry_out(adder_carry_out)
+       );
+
+// one-bit subtractor
+xor_gate flip_bit_unit (
+         .x(subtractor_operand_b),
+         .y(1'b1),
+         .z(subtractor_not_operand_b)
+       );
+fulladder subtractor_unit (
+           .a(subtractor_operand_a),
+           .b(subtractor_not_operand_b),
+	       .carry_in(1'b1),
+           .sum(subtractor_sum),
+	       .carry_out(subtractor_carry_out)
+       );
+
+
+// one-bit xor
+xor_gate xor_unit (
+	   .x(xor_operand_a),
+	   .y(xor_operand_b),
+  	   .z(xor_res)
+      );
+
+// one-bit or 
+or_gate or_unit (
+	   .x(or_operand_a),
+	   .y(or_operand_b),
+  	   .z(or_res)
+      );
+
+// one-bit and
+and_gate and_unit (
+	   .x(and_operand_a),
+	   .y(and_operand_b),
+  	   .z(and_res)
+      );
+
 // arithmetic: add, sub
 // logical: and, xor, or, sll, srl
 // conditional: slt, sltu
@@ -34,7 +93,117 @@ alu dut (
 
 initial
 begin
+    // unit test starts...
+    // adder_unit
+    #50;
+    adder_operand_a = 1'b0;
+    adder_operand_b = 1'b0;
+    adder_carry_in = 1'b0;
 
+    #50;
+    adder_operand_a = 1'b0;
+    adder_operand_b = 1'b0;
+    adder_carry_in = 1'b1;
+
+    #50;
+    adder_operand_a = 1'b0;
+    adder_operand_b = 1'b1;
+    adder_carry_in = 1'b0;
+
+    #50;
+    adder_operand_a = 1'b0;
+    adder_operand_b = 1'b1;
+    adder_carry_in = 1'b1;
+
+    #50;
+    adder_operand_a = 1'b1;
+    adder_operand_b = 1'b0;
+    adder_carry_in = 1'b0;
+
+    #50;
+    adder_operand_a = 1'b1;
+    adder_operand_b = 1'b0;
+    adder_carry_in = 1'b1;
+
+    #50;
+    adder_operand_a = 1'b1;
+    adder_operand_b = 1'b1;
+    adder_carry_in = 1'b0;
+
+    #50;
+    adder_operand_a = 1'b1;
+    adder_operand_b = 1'b1;
+    adder_carry_in = 1'b1;
+
+    // subtractor_unit
+    #50;
+    subtractor_operand_a = 1'b0;
+    subtractor_operand_b = 1'b0;
+
+    #50;
+    subtractor_operand_a = 1'b0;
+    subtractor_operand_b = 1'b1;
+
+    #50;
+    subtractor_operand_a = 1'b1;
+    subtractor_operand_b = 1'b0;
+
+    #50;
+    subtractor_operand_a = 1'b1;
+    subtractor_operand_b = 1'b1;
+
+    // xor_unit
+    #50;
+    xor_operand_a = 1'b0;
+    xor_operand_b = 1'b0;
+
+    #50;
+    xor_operand_a = 1'b0;
+    xor_operand_b = 1'b1;
+
+    #50;
+    xor_operand_a = 1'b1;
+    xor_operand_b = 1'b0;
+
+    #50;
+    xor_operand_a = 1'b1;
+    xor_operand_b = 1'b1;
+
+    // or_unit
+    #50;
+    or_operand_a = 1'b0;
+    or_operand_b = 1'b0;
+
+    #50;
+    or_operand_a = 1'b0;
+    or_operand_b = 1'b1;
+
+    #50;
+    or_operand_a = 1'b1;
+    or_operand_b = 1'b0;
+
+    #50;
+    or_operand_a = 1'b1;
+    or_operand_b = 1'b1;
+
+    // and_unit
+    #50;
+    and_operand_a = 1'b0;
+    and_operand_b = 1'b0;
+
+    #50;
+    and_operand_a = 1'b0;
+    and_operand_b = 1'b1;
+
+    #50;
+    and_operand_a = 1'b1;
+    and_operand_b = 1'b0;
+
+    #50;
+    and_operand_a = 1'b1;
+    and_operand_b = 1'b1;
+
+    // ALU simulation starts...
     // testing normal add: 1+1=2
     #50;
     operand_a = 32'd1;
@@ -198,7 +367,7 @@ begin
 
     // testing normal srl:
     #50;
-    operand_a = 32'h0000ffff;
+    operand_a = 32'hffff0000;
     operand_b = 32'h00000010;
     control = 4'b0110;
     curr_opcode = opcode_ascii[control];
@@ -221,6 +390,20 @@ begin
     #50;
     operand_a = 32'h0000ffff;
     operand_b = 32'h00000010;
+    control = 4'b0111;
+    curr_opcode = opcode_ascii[control];
+
+    // testing normal slt:
+    #50;
+    operand_a = 32'h0000ffff;
+    operand_b = 32'h00ffffff;
+    control = 4'b0111;
+    curr_opcode = opcode_ascii[control];
+
+    // testing normal slt:
+    #50;
+    operand_a = 32'hffffff00;
+    operand_b = 32'h00ffffff;
     control = 4'b0111;
     curr_opcode = opcode_ascii[control];
 

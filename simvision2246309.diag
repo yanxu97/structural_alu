@@ -1,0 +1,123 @@
+*** Message Type: info ***
+When: Thu Nov 04 07:13:26 PM CDT 2021
+SimVision started.
+Version: TOOL:  simvision(64)   18.09-s011
+User: yxz7776
+Host: alfred.ece.northwestern.edu
+Platform: Linux/x86_64/4.18.0-305.19.1.el8_4.x86_64
+Started: Thu Nov 04 07:13:26 PM CDT 2021
+Command: /vol/cadence2018/XCELIUM1809/tools.lnx86/simvision/bin/64bit/simvision.exe -connect dc:alfred.ece.northwestern.edu:38825 -64BIT -nocopyright
+Work Directory: /home/yxz7776/eecs361lib_alu_Verilog
+ 
+*** Message Type: info ***
+When: Thu Nov 04 07:13:26 PM CDT 2021
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Thu Nov 04 07:13:28 PM CDT 2021
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Thu Nov 04 07:13:29 PM CDT 2021
+Connect to Simulator
+      Design: worklib.and_gate_n:v
+   Languages: verilog
+   Simulator: XM-Sim
+     Version: TOOL:       xmsim(64)       18.09-s011
+        User: yxz7776
+        Host: alfred.ece.northwestern.edu
+Time Started: Thu Nov 04 07:13:26 PM CDT 2021
+  Process ID: 2246280
+   Directory: /home/yxz7776/eecs361lib_alu_Verilog
+     Command: xrun -64bit -gui -access r ./lib/and_gate.v ./lib/and_gate_32.v ./lib/and_gate_n.v ./lib/dec_n.v ./lib/mux.v ./lib/mux_32.v ./lib/mux_n.v ./lib/nand_gate.v ./lib/nand_gate_32.v ./lib/nand_gate_n.v ./lib/nor_gate.v ./lib/nor_gate_32.v ./lib/nor_gate_n.v ./lib/not_gate.v ./lib/not_gate_32.v ./lib/not_gate_n.v ./lib/or_gate.v ./lib/or_gate_32.v ./lib/or_gate_n.v ./lib/xnor_gate.v ./lib/xnor_gate_32.v ./lib/xnor_gate_n.v ./lib/xor_gate.v ./lib/xor_gate_32.v ./lib/xor_gate_n.v ./add_32.v ./alu.v ./alu_tb.v ./carry_sel.v ./check_zero.v ./comparator.v ./fulladder.v ./fulladder_4.v ./mux16_to_1.v ./mux_32_wrapper.v ./mux_n_wrapper.v ./sll.v ./slr.v ./slt.v ./sltu.v
+
+ 
+*** Message Type: info ***
+When: Thu Nov 04 07:13:29 PM CDT 2021
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Thu Nov 04 07:14:02 PM CDT 2021
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Thu Nov 04 07:33:02 PM CDT 2021
+Create schematic window: "Schematic Tracer 1"
+ 
+*** Message Type: info ***
+When: Thu Nov 04 07:33:38 PM CDT 2021
+Delete schematic window: "Schematic Tracer 1"
+ 
+*** Message Type: info ***
+When: Thu Nov 04 07:33:52 PM CDT 2021
+Create schematic window: "Schematic Tracer 2"
+ 
+*** Message Type: info ***
+When: Thu Nov 04 07:48:21 PM CDT 2021
+Delete schematic window: "Schematic Tracer 2"
+ 
+*** Message Type: error ***
+When: Thu Nov 04 07:48:21 PM CDT 2021
+invalid command name ".schematicWindow1.bottom.statusbar.indicator-autosave.autosave"
+    while executing
+".schematicWindow1.bottom.statusbar.indicator-autosave.autosave configure -image image269"
+    ("after" script)
+ 
+*** Message Type: error ***
+When: Thu Nov 04 07:48:21 PM CDT 2021
+invalid command name ".schematicWindow1.bottom.statusbar.indicator-autosave.autosave"
+    while executing
+".schematicWindow1.bottom.statusbar.indicator-autosave.autosave configure -image image269"
+    ("after" script)
+ 
+*** Message Type: error ***
+When: Thu Nov 04 07:48:21 PM CDT 2021
+invalid command name ".schematicWindow1.bottom.statusbar.indicator-autosave.autosave"
+    while executing
+".schematicWindow1.bottom.statusbar.indicator-autosave.autosave configure -image image269"
+    ("after" script)
+ 
+*** Message Type: info ***
+When: Thu Nov 04 07:48:26 PM CDT 2021
+Create schematic window: "Schematic Tracer 3"
+ 
+*** Message Type: info ***
+When: Thu Nov 04 07:49:08 PM CDT 2021
+Delete schematic window: "Schematic Tracer 3"
+ 
+*** Message Type: info ***
+When: Thu Nov 04 07:49:14 PM CDT 2021
+Create schematic window: "Schematic Tracer 4"
+ 
+*** Message Type: info ***
+When: Thu Nov 04 08:32:12 PM CDT 2021
+Delete schematic window: "Schematic Tracer 4"
+ 
+*** Message Type: info ***
+When: Thu Nov 04 08:32:17 PM CDT 2021
+Create schematic window: "Schematic Tracer 5"
+ 
+*** Message Type: info ***
+When: Thu Nov 04 08:33:34 PM CDT 2021
+Delete schematic window: "Schematic Tracer 5"
+ 
+*** Message Type: info ***
+When: Thu Nov 04 08:33:46 PM CDT 2021
+Create schematic window: "Schematic Tracer 6"
+ 
+*** Message Type: info ***
+When: Thu Nov 04 08:35:16 PM CDT 2021
+Delete schematic window: "Schematic Tracer 6"
+ 
+*** Message Type: info ***
+When: Thu Nov 04 08:35:23 PM CDT 2021
+Create schematic window: "Schematic Tracer 7"
+ 
+*** Message Type: info ***
+When: Thu Nov 04 08:37:04 PM CDT 2021
+Delete schematic window: "Schematic Tracer 7"
+ 
+*** Message Type: info ***
+When: Thu Nov 04 08:41:03 PM CDT 2021
+Create schematic window: "Schematic Tracer 8"
+ 
